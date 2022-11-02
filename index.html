@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick Astley</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/content/logo.png" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Make nav bar -->
+    <audio id="audio" src="audio/webMusic.mp3" controls style="display: none" loop></audio>
+    <div class="popup">
+      <div class="popup-content">
+        <div class="popup-text">
+          <p>Press <span>"F"</span> to play/pause the audio</p>
+        </div>
+        <div class="popup-close">
+          <span class="tutup" onclick="closePopup()">&times;</span>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll up button -->
+    <div class="scrollup" id="scroll-up">
+      <a class="button-home">&lt;</a>
+    </div>
+    <header>
+      <nav>
+        <a class="button-home">
+          <h2>Rick Astley</h2>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-a button-home">Home</a></li>
+          <li><a class="nav-a button-about">About</a></li>
+          <li><a class="nav-a button-song">Songs</a></li>
+          <li><a class="nav-a button-other">Other</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Make audio -->
+    <section class="home" id="home">
+      <!-- Landing page portofolio website-->
+      <div class="landing-page">
+        <div class="landing-page-text">
+          <h1>Rick Astley</h1>
+          <p>It's one of contemporary music's most unlikely tales</p>
+        </div>
+        <div class="landing-page-button">
+          <a class="button-about">Let's Start</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <!-- About -->
+      <div class="about">
+        <div class="about-image">
+          <img src="img/content/aboutImg.jpg" alt="rick" />
+        </div>
+        <div class="about-text">
+          <h1>Who Is Rick Astley?</h1>
+          <p>
+            Richard Paul Astley (lahir 6 Februari 1966) adalah penyanyi, penulis lagu, dan tokoh radio Inggris, yang telah aktif dalam musik selama beberapa dekade. Dia mendapatkan ketenaran di seluruh dunia pada 1980-an, memiliki beberapa
+            hits termasuk lagu khasnya "Never Gonna Give You Up", "Together Forever" dan "Whenever You Need Somebody", dan kembali ke musik penuh waktu pada 2000-an setelah 6 tahun hiatus. Di luar karir musiknya, Astley kadang-kadang
+            bekerja sebagai DJ radio dan podcaster.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="songs">
+      <div class="songs">
+        <div class="songs-title">
+          <h1>Most Popular Songs of Rick Astley</h1>
+        </div>
+        <div class="card-groups-songs">
+          <button class="tombolku" onclick="Modal(0)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song1.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Never Gonna Give You Up</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(1)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song2.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Together Forever</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(2)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song3.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Cry For Help</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(3)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song4.png" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Whenever You Need Somebody</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(4)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song5.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>She Wants To Dance With Me</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(5)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song6.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Take Me to Your Heart</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(6)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song7.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Hold Me in Your Arms</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(7)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song8.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>It Would Take a Strong Strong Man</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(8)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song9.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>Angels On My Side</h4>
+              </div>
+            </div>
+          </button>
+          <button class="tombolku" onclick="Modal(9)">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/content/songs/song10.jpg" alt="song1" />
+              </div>
+              <div class="card-text">
+                <h4>My Arms Keep Missing You</h4>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="tutup" onclick="closeModal()">&times;</span>
+          <iframe id="spotify" style="border-radius: 0px" src="" width="90%" height="200px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <p id="modal-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="other">
+      <div class="other">
+        <div class="other-title">
+          <h1>Social Media</h1>
+        </div>
+        <div class="card-groups-other">
+          <a href="https://open.spotify.com/artist/0gxyHStUsqpMadRV0Di1Qt?si=128bd8bdb8414c55" target="_blank">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-brands fa-spotify fa-4x"></i>
+              </div>
+              <div class="card-text">
+                <h1>Spotify</h1>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw" target="_blank">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-brands fa-youtube fa-4x"></i>
+              </div>
+              <div class="card-text">
+                <h1>Youtube</h1>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/officialrickastley/" target="_blank">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-brands fa-instagram fa-4x"></i>
+              </div>
+              <div class="card-text">
+                <h1>Instagram</h1>
+              </div>
+            </div>
+          </a>
+          <a href="https://twitter.com/rickastley" target="_blank">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-brands fa-twitter fa-4x"></i>
+              </div>
+              <div class="card-text">
+                <h1>Twitter</h1>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/RickAstley/" target="_blank">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-brands fa-facebook fa-4x"></i>
+              </div>
+              <div class="card-text">
+                <h1>Facebook</h1>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.tiktok.com/@rickastleyofficial" target="_blank">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-brands fa-tiktok fa-4x"></i>
+              </div>
+              <div class="card-text">
+                <h1>TikTok</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="bonus-title" id="meme">
+          <h1>Bonus Content</h1>
+          <a id="meme-button">Click Here</a>
+        </div>
+      </div>
+      <div id="meme-content" style="display: none">
+        <div class="bonus">
+          <div class="meme-text">
+            <h1>RickRoll</h1>
+            <p>
+              "Rickroll", adalah 'bait-and-switch' atau fenomena dimana ketika seseorang memberi link tentang sesuatu yang sensasional seperti berita, ketika diklik malah membawa netizen (re-direct) ke situs tertentu yang ada hubungannya
+              dengan lagu Rick Astley - Never Gonna Give You Up.
+            </p>
+            <p>
+              FYI : Never Gonna Give You Up adalah lagu single dibuat oleh Rick Astley yang rilis pada tahun 1987 bersamaan dengan album Whenever You Need Somebody. Lagu ini sangat terkenal di jamannya, dan berada di posisi 1 di berbagai
+              chart lagu internasional, termasuk Billboard.
+            </p>
+            <p>
+              Beberapa situs terkenal seperti Youtube pernah melakukan 'clickbait' ini saat April Mop tahun 2008 silam, dimana ketika netizen meng-klik link video terpopuler di Youtube, link itu mengarahkan (Re-direct) netizen ke lagu ini.
+            </p>
+          </div>
+          <div class="meme-image">
+            <img src="img/content/misc1.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="footer">
+        <li><a class="button-home">Home</a></li>
+        <li><a class="button-about">About</a></li>
+        <li><a class="button-song">Songs</a></li>
+        <li><a class="button-other">Other</a></li>
+      </ul>
+      <p>&copy; 2022 Ahmad Rifki Fauzi</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2333fa2981.js" crossorigin="anonymous"></script>
+  </body>
+</html>
